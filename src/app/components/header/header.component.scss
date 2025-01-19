@@ -7,7 +7,53 @@
     padding: clamp(30px,5%,37px) 10% clamp(30px,5%,37px) 10%;
 }
 
-.company-img{
+.image{
     width: 50px;
     height: 50px;
+}
+
+li{
+    list-style-type: none;
+    position: relative;
+}
+
+
+li>span{
+    position: absolute;
+    top: -12px;
+    left: 56%; /* Anchor to the middle */
+    transform: translateX(0); /* No shift to the left */
+    background-color: white;
+    padding: 2px 6px; /* Add horizontal padding for better spacing */
+    border-radius: 12px; /* Slightly rounded instead of a perfect circle */
+    font-size: 12px;
+    white-space: nowrap; /* Prevents breaking into two lines */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow */
+    
+}
+.icon{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+@mixin alignment{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    @include alignment();
+    justify-content:space-around;
+    width: 100%;
+    margin: 0;
+}
+li>i{
+    @include alignment();
+    justify-content: center;
+}
+
+nav{
+    width: clamp(180px,40vw,240px);
+    @include alignment();
+    justify-content: center;
 }

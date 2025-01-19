@@ -31,6 +31,10 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+<<<<<<< HEAD
+=======
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+>>>>>>> feature/SPA-5
               "src/styles.scss"
             ],
             "scripts": [
