@@ -40,3 +40,16 @@ main{
         height: 40px; /* Optional: customize input height */
     }
 }
+
+.filter-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.each-filter{
+    background-color: #c3c5c7;
+    display: inline;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
