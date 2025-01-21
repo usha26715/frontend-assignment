@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent {
-
+  filterList: Array<string> = ["anu","yamu","anu","yamu"]
 }
