@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.content-ctr{
+    width: 80vw;
+}
+
+
+.search-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.search-label{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.search-input-group {
+    position: relative;
+    width: 100%;
+
+    .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #6c757d;
+        cursor: pointer;
+    }
+
+    .form-control {
+        padding-left: 35px; /* Adjust padding to make space for the icon */
+        height: 40px; /* Optional: customize input height */
+    }
+}
